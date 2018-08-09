@@ -2,6 +2,7 @@
 alias up="cd ~/workspace/up"
 alias front="cd ~/workspace/up/frontend"
 alias back="cd ~/workspace/up/backend"
+alias work="cd ~/workspace"
 
 # List all files colorized in long format
 alias l="ls -lF $colorflag"

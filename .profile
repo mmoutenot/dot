@@ -27,4 +27,6 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 export QT_AUTO_SCREEN_SCALE_FACTOR=1
-
+export DPI=$(xdpyinfo | grep -oP '(?<=resolution:\s\s\s\s[0-9]{3}x)[0-9]{3}')
+export POLYBAR_HEIGHT=$(expr $DPI / 5)
+export POLYBAR_TRAY_MAXSIZE=$(expr $DPI / 6)

@@ -55,7 +55,7 @@ modules-center =
 modules-right = pulseaudio memory cpu wlan battery temperature date powermenu
 
 tray-position = right
-tray-maxsize = 1000
+tray-maxsize = 40
 tray-padding = 2
 ;tray-transparent = true
 ;tray-background = #0063ff

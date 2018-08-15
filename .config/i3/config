@@ -209,12 +209,15 @@ bindsym --release $mod+Shift+Print exec "scrot -u -d 4 '/tmp/%s_%H%M_%d%m%Y_$wx$
 
 # Startup applications
 exec --no-startup-id /usr/bin/clipit -n
-exec --no-startup-id /usr/bin/setxkbmap -option ctrl:nocaps
 exec --no-startup-id /usr/bin/fcitx
 exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id /usr/bin/blueman-applet
 exec --no-startup-id /usr/bin/nitrogen --restore
-exec --no-startup-id redshift
+exec --no-startup-id /usr/bin/redshift
+exec --no-startup-id /usr/bin/compton
+
+exec --no-startup-id /usr/bin/setxbmap -option caps:swapescape
+exec --no-startup-id /usr/bin/xmodmap ~/.Xmodmap
 
 # Second screen
 # exec --no-startup-id /usr/bin/xrandr --output HDMI-1 --auto --above LVDS-1
